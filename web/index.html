@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora de Depósito a Plazo Fijo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="icon" href="u.jpg"/>
+    </head>
+
+    <header>
+        <h1>Calculadora a Plazo Fijo</h1>
+    </header>
+    <body>
+        <div class="form-container">
+            <form action="calcular" method="post" class="caja">
+                <label for="monto">Ingrese monto:</label>
+                <input type="number" name="monto" id="monto" required placeholder="Ingrese el monto"><br><br>
+
+                <label for="moneda">Moneda:</label>
+                <select name="moneda" id="moneda">
+                    <option value="">Seleccione</option>
+                    <option value="1">Sol peruano</option>
+                </select>
+
+                <br><br>
+                <label for="plazo">Plazo:</label>
+                <select name="plazo" id="plazo" required>
+                    <option value="">Seleccione</option>
+                    <option value="1">1 Año</option>
+                    <option value="2">2 Años</option>
+                    <option value="3">3 Años</option>
+                    <option value="4">4 Años</option>
+                    <option value="5">5 Años</option>
+                    <option value="6">6 Años</option>
+                    <option value="7">7 Años</option>
+                    <option value="8">8 Años</option>
+                    <option value="9">9 Años</option>
+                    <option value="10">10 Años</option>
+                </select><br><br>
+                <label for="fechaInicio">Fecha de inicio:</label>
+                <input type="date" name="fechaInicio" id="fechaInicio" required><br><br>
+
+                <input type="submit" value="Calcular">
+            </form>
+        </div>
+    </body>
+</html>
